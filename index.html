@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Cube Club — A luxury lifestyle destination offering premium hospitality experiences and exclusive investment opportunities. Experience luxury. Own the future.">
+    <meta name="keywords" content="luxury resort, premium investment, hospitality, lifestyle, wedding venue, The Cube Club">
+    <meta name="author" content="The Cube Club">
+    <title>The Cube Club — Beyond Hospitality</title>
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Lenis Smooth Scroll CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- PRELOADER                                    -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__inner">
+            <div class="preloader__logo">THE CUBE <span>CLUB</span></div>
+            <div class="preloader__line"></div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- NAVIGATION                                   -->
+    <!-- ═══════════════════════════════════════════ -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner container">
+            <a href="#" class="nav__logo">The Cube <span>Club</span></a>
+            <ul class="nav__links">
+                <li><a href="#hospitality">Experience</a></li>
+                <li><a href="#investment">Investment</a></li>
+                <li><a href="#weddings">Weddings</a></li>
+                <li><a href="#founder">Our Story</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#booking" class="nav__cta">Book Now</a>
+            <div class="nav__hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#hospitality">Experience</a>
+        <a href="#investment">Investment</a>
+        <a href="#weddings">Weddings</a>
+        <a href="#founder">Our Story</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="btn btn--outline-gold" style="margin-top: 2rem;">Book Now</a>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 1: HERO                              -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section 
+    class="hero" 
+    id="hero"
+    style="
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    "
+>
+
+    <div 
+        class="hero__bg"
+        style="
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        "
+    >
+
+        <!-- Background Video -->
+        <video 
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            "
+        >
+            <source src="assets/video/vide1.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <!-- Overlay -->
+    <div 
+        class="hero__overlay"
+        style="
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.35);
+            z-index: 1;
+        "
+    ></div>
+
+    <!-- Content -->
+    <div 
+        class="hero__content"
+        style="
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        "
+    >
+
+        <p class="eyebrow">A Private Luxury World</p>
+
+        <h1 style="
+            font-size: clamp(48px, 8vw, 120px);
+            font-weight: 300;
+            margin: 20px 0;
+        ">
+            Beyond Hospitality
+        </h1>
+
+        <p style="
+            max-width: 850px;
+            font-size: 20px;
+            line-height: 1.7;
+        ">
+            Experience luxury. Own the future. Where world-class hospitality meets extraordinary investment returns.
+        </p>
+
+        <div 
+            class="hero__buttons"
+            style="
+                margin-top: 40px;
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            "
+        >
+            <a href="#hospitality" class="btn btn--primary">Explore Stay</a>
+
+            <a href="#investment" class="btn btn--outline">Explore Investment</a>
+        </div>
+
+    </div>
+
+    <!-- Scroll -->
+    <div 
+        class="hero__scroll"
+        style="
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            color: white;
+        "
+    >
+        <span>Scroll to Discover</span>
+        <div class="hero__scroll-line"></div>
+    </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 2: LUXURY LIVING                     -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section section--ivory" id="luxury-living">
+        <div class="container">
+            <div class="text-center reveal">
+                <p class="eyebrow">Luxury Living</p>
+                <h2>Own a Lifestyle,<br>Not Just a Property</h2>
+                <div class="gold-line" style="margin: 1.5rem auto;"></div>
+                <p style="margin: 0 auto 4rem;">The Cube Club is more than real estate. It's a statement. A community of visionaries who understand that true luxury is an investment in how you live.</p>
+            </div>
+
+            <div class="stats-row stagger-children">
+                <div class="stat">
+                    <div class="stat__number" data-count="250" data-suffix="+">0</div>
+                    <div class="stat__label">Luxury Units</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number" data-count="12" data-suffix="%">0</div>
+                    <div class="stat__label">Avg. Annual Returns</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number" data-count="50" data-suffix="+">0</div>
+                    <div class="stat__label">Amenities</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number" data-count="98" data-suffix="%">0</div>
+                    <div class="stat__label">Investor Satisfaction</div>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+    
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 3: HOSPITALITY EXPERIENCE            -->
+    <!-- (Horizontal Scroll Storytelling)             -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="horizontal-section" id="hospitality">
+        <div class="horizontal-wrapper">
+            <!-- Panel 1: Introduction -->
+            <div class="horizontal-panel">
+                <div class="horizontal-panel__bg">
+                    <img src="assets/images/lobby_entrance.png" alt="Grand lobby entrance">
+                </div>
+                <div class="horizontal-panel__overlay"></div>
+                <div class="horizontal-panel__number">01</div>
+                <div class="horizontal-panel__content">
+                    <p class="eyebrow">The Experience</p>
+                    <h2>A World of<br>Refined Luxury</h2>
+                    <div class="gold-line"></div>
+                    <p>Every moment at The Cube Club is designed to transcend expectations. From arrival to departure, immerse yourself in a sanctuary of sophistication.</p>
+                </div>
+            </div>
+
+            <!-- Panel 2: Rooms -->
+            <div class="horizontal-panel">
+                <div class="horizontal-panel__bg">
+                    <img src="assets/images/room_luxury.jpg" alt="Premium luxury suite">
+                </div>
+                <div class="horizontal-panel__overlay"></div>
+                <div class="horizontal-panel__number">02</div>
+                <div class="horizontal-panel__content">
+                    <p class="eyebrow">Accommodations</p>
+                    <h2>Luxury<br>Residences</h2>
+                    <div class="gold-line"></div>
+                    <p>Spacious suites with panoramic views, Italian marble finishes, and bespoke furnishings that redefine comfort.</p>
+                </div>
+            </div>
+
+            <!-- Panel 3: Dining -->
+            <div class="horizontal-panel">
+                <div class="horizontal-panel__bg">
+                    <img src="assets/images/dining.png" alt="Fine dining experience">
+                </div>
+                <div class="horizontal-panel__overlay"></div>
+                <div class="horizontal-panel__number">03</div>
+                <div class="horizontal-panel__content">
+                    <p class="eyebrow">Gastronomy</p>
+                    <h2>Culinary<br>Excellence</h2>
+                    <div class="gold-line"></div>
+                    <p>World-class chefs craft exquisite menus blending local heritage with global sophistication. An unforgettable dining journey.</p>
+                </div>
+            </div>
+
+            <!-- Panel 4: Infinity Pool -->
+            <div class="horizontal-panel">
+                <div class="horizontal-panel__bg">
+                    <img src="assets/images/infinity_pool.png" alt="Infinity pool with panoramic view">
+                </div>
+                <div class="horizontal-panel__overlay"></div>
+                <div class="horizontal-panel__number">04</div>
+                <div class="horizontal-panel__content">
+                    <p class="eyebrow">Leisure</p>
+                    <h2>Infinity<br>Experiences</h2>
+                    <div class="gold-line"></div>
+                    <p>Vanishing-edge pools, private cabanas, and curated leisure experiences that connect you with nature's grandeur.</p>
+                </div>
+            </div>
+
+            <!-- Panel 5: Wellness -->
+            <div class="horizontal-panel">
+                <div class="horizontal-panel__bg">
+                    <img src="assets/images/wellness_spa.png" alt="Wellness and spa sanctuary">
+                </div>
+                <div class="horizontal-panel__overlay"></div>
+                <div class="horizontal-panel__number">05</div>
+                <div class="horizontal-panel__content">
+                    <p class="eyebrow">Wellness</p>
+                    <h2>Sanctuary<br>of Serenity</h2>
+                    <div class="gold-line"></div>
+                    <p>A holistic wellness journey — ancient healing traditions, modern treatments, and spaces designed for total rejuvenation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-counter"><span class="horizontal-counter__current">01</span> / <span class="horizontal-counter__total">05</span></div>
+    </section>
+
+    <section class="section section--ivory" id="luxury-living">
+         <div class="grid grid-2" style="margin-top: 5rem; align-items: center;">
+                <div class="reveal-left">
+                    <div class="parallax-container">
+                        <img src="assets/images/aerial_resort.jpeg" alt="Aerial view of resort complex" class="img-reveal parallax-img" data-speed="0.15">
+                    </div>
+                </div>
+                <div class="reveal-right" style="padding-left: clamp(1rem, 4vw, 4rem);">
+                    <p class="eyebrow">The Vision</p>
+                    <h3>Where Hospitality<br>Meets Wealth</h3>
+                    <div class="gold-line"></div>
+                    <p>Every unit at The Cube Club is a dual-purpose investment — a luxury retreat for personal use and a high-yield revenue asset managed by our world-class hospitality team.</p>
+                    <p style="margin-top: 1rem;">With professional management, transparent reporting, and guaranteed occupancy programs, your investment works while you enjoy life.</p>
+                    <a href="#roi-calculator" class="btn btn--outline-gold" style="margin-top: 2rem;">Calculate Your Returns <span class="btn-arrow">→</span></a>
+                </div>
+            </div>
+    </section>
+
+    
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 4: INVESTMENT OPPORTUNITY            -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section section--dark" id="investment">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="reveal">
+                    <p class="eyebrow">Investment</p>
+                    <h2>Luxury<br>That Earns</h2>
+                    <div class="gold-line"></div>
+                    <p>The Cube Club offers a rare convergence of lifestyle and financial growth. Every property is designed as a luxury asset — meticulously managed, consistently performing.</p>
+                    <div class="investment-highlights stagger-children" style="margin-top: 2.5rem;">
+                        <div class="investment-highlight">
+                            <div class="investment-highlight__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/><path d="M17 7l-5 5-5-5"/></svg>
+                            </div>
+                            <div>
+                                <h4>Guaranteed Rental Income</h4>
+                                <p>Professional hospitality management ensuring consistent monthly returns.</p>
+                            </div>
+                        </div>
+                        <div class="investment-highlight">
+                            <div class="investment-highlight__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                            </div>
+                            <div>
+                                <h4>Capital Appreciation</h4>
+                                <p>Premium location and brand value driving consistent property appreciation.</p>
+                            </div>
+                        </div>
+                        <div class="investment-highlight">
+                            <div class="investment-highlight__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
+                            </div>
+                            <div>
+                                <h4>Complete Transparency</h4>
+                                <p>Real-time dashboards, quarterly reports, and full operational visibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal-right">
+                    <div class="parallax-container">
+                        <img src="assets/images/lobby_entrance.png" alt="Premium resort lobby" class="img-reveal parallax-img" data-speed="0.1" style="border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 5: CHOOSE YOUR JOURNEY               -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="journey" id="journey">
+        <div class="journey__panel" data-journey="stay">
+            <div class="journey__panel-bg">
+                <img src="assets/images/room_luxury.jpg" alt="Luxury room experience">
+            </div>
+            <div class="journey__panel-overlay"></div>
+            <div class="journey__panel-content">
+                <p class="eyebrow">Hospitality</p>
+                <h2>I Want to Stay</h2>
+                <p>Discover an unparalleled hospitality experience curated for the most discerning guests.</p>
+                <a href="#hospitality" class="btn btn--outline">Explore Experiences <span class="btn-arrow">→</span></a>
+            </div>
+        </div>
+        <div class="journey__divider"></div>
+        <div class="journey__panel" data-journey="invest">
+            <div class="journey__panel-bg">
+                <img src="assets/images/aerial_resort.jpeg" alt="Investment opportunity aerial view">
+            </div>
+            <div class="journey__panel-overlay"></div>
+            <div class="journey__panel-content">
+                <p class="eyebrow">Investment</p>
+                <h2>I Want to Invest</h2>
+                <p>Own a piece of luxury. Exceptional returns meet world-class hospitality infrastructure.</p>
+                <a href="#investment" class="btn btn--outline">Explore Returns <span class="btn-arrow">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 6: ROI CALCULATOR                    -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section section--ivory" id="roi-calculator">
+        <div class="container">
+            <div class="text-center reveal">
+                <p class="eyebrow">Investment Calculator</p>
+                <h2>Calculate Your Returns</h2>
+                <div class="gold-line" style="margin: 1.5rem auto;"></div>
+                <p style="margin: 0 auto 3rem;">See how your investment grows over time with our premium hospitality returns.</p>
+            </div>
+
+            <div class="calculator glass reveal">
+                <div class="calculator__grid">
+                    <!-- Inputs -->
+                    <div class="calculator__inputs">
+                        <div class="calculator__input-group">
+                            <label for="investment-amount">Investment Amount</label>
+                            <input type="range" id="investment-amount" class="calculator__slider" min="5000000" max="50000000" value="10000000" step="500000">
+                            <div class="calculator__value" id="investment-amount-display">₹1 Cr</div>
+                        </div>
+
+                        <div class="calculator__input-group">
+                            <label for="investment-duration">Investment Duration</label>
+                            <select id="investment-duration" class="calculator__select">
+                                <option value="1">1 Year</option>
+                                <option value="3">3 Years</option>
+                                <option value="5" selected>5 Years</option>
+                                <option value="10">10 Years</option>
+                            </select>
+                        </div>
+
+                        <div class="calculator__input-group">
+                            <label for="return-type">View Returns As</label>
+                            <select id="return-type" class="calculator__select">
+                                <option value="yearly">Yearly Returns</option>
+                                <option value="monthly">Monthly Returns</option>
+                            </select>
+                        </div>
+
+                        <a href="#contact" class="btn btn--primary" style="width: 100%; justify-content: center; margin-top: 1rem;">Talk to an Advisor <span class="btn-arrow">→</span></a>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="calculator__results">
+                        <div class="calculator__chart" id="roi-chart">
+                            <svg viewBox="0 0 120 120" width="180" height="180">
+                                <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(198,165,106,0.1)" stroke-width="8"/>
+                                <circle id="roi-chart-fill" cx="60" cy="60" r="50" fill="none" stroke="#C6A56A" stroke-width="8" stroke-dasharray="314" stroke-dashoffset="100" stroke-linecap="round" transform="rotate(-90 60 60)" style="transition: stroke-dashoffset 0.8s ease;"/>
+                                <text x="60" y="55" text-anchor="middle" fill="#C6A56A" font-family="'Cormorant Garamond', serif" font-size="16" font-weight="300" id="roi-chart-percentage">68%</text>
+                                <text x="60" y="72" text-anchor="middle" fill="#8A8578" font-family="'DM Sans', sans-serif" font-size="6" font-weight="400" letter-spacing="0.1em">RETURNS</text>
+                            </svg>
+                        </div>
+                        <div class="calculator__result-item">
+                            <div class="calculator__result-label">Total Value</div>
+                            <div class="calculator__result-value" id="roi-total-return">₹1.76 Cr</div>
+                        </div>
+                        <div class="calculator__result-item">
+                            <div class="calculator__result-label">Monthly Income</div>
+                            <div class="calculator__result-value" id="roi-monthly-income">₹66,667</div>
+                        </div>
+                        <div class="calculator__result-item">
+                            <div class="calculator__result-label">Capital Appreciation</div>
+                            <div class="calculator__result-value" id="roi-appreciation">₹21.67 L</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 7: TRUST & CREDIBILITY               -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section" id="trust">
+        <div class="container">
+            <div class="text-center reveal">
+                <p class="eyebrow">Trust & Credibility</p>
+                <h2>Built on Trust,<br>Defined by Excellence</h2>
+                <div class="gold-line" style="margin: 1.5rem auto;"></div>
+                <p style="margin: 0 auto 4rem;">Our commitment to transparency and quality has earned the trust of investors and guests from around the world.</p>
+            </div>
+
+            <div class="trust-grid stagger-children">
+                <div class="trust-card">
+                    <div class="trust-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4L6 12v12c0 11 8 18 18 22 10-4 18-11 18-22V12L24 4z"/>
+                            <path d="M16 24l6 6 10-10"/>
+                        </svg>
+                    </div>
+                    <h4 class="trust-card__title">RERA Certified</h4>
+                    <p class="trust-card__text">Fully compliant with all regulatory standards, ensuring complete legal protection for every investor.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="24" r="20"/>
+                            <path d="M24 14v10l7 7"/>
+                        </svg>
+                    </div>
+                    <h4 class="trust-card__title">On-Time Delivery</h4>
+                    <p class="trust-card__text">100% track record of on-time project delivery with zero compromises on quality.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4l6 12h14l-11 8 4 14-13-9-13 9 4-14L4 16h14l6-12z"/>
+                        </svg>
+                    </div>
+                    <h4 class="trust-card__title">Award Winning</h4>
+                    <p class="trust-card__text">Recognized by leading hospitality and real estate bodies for design excellence and guest satisfaction.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="6" y="10" width="36" height="28" rx="4"/>
+                            <path d="M6 18h36"/>
+                            <path d="M16 30h8"/>
+                        </svg>
+                    </div>
+                    <h4 class="trust-card__title">Transparent Financials</h4>
+                    <p class="trust-card__text">Quarterly investor reports, audited financials, and real-time performance dashboards.</p>
+                </div>
+            </div>
+
+            <div class="stats-row stagger-children" style="margin-top: 4rem;">
+                <div class="stat">
+                    <div class="stat__number" data-count="500" data-suffix="+">0</div>
+                    <div class="stat__label">Happy Investors</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number" data-count="15" data-suffix="+">0</div>
+                    <div class="stat__label">Years of Trust</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number" data-count="200" data-suffix=" Cr+">0</div>
+                    <div class="stat__label">Assets Managed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__number" data-count="100" data-suffix="%">0</div>
+                    <div class="stat__label">Legal Compliance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 8: WEDDING EXPERIENCES               -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section section--dark" id="weddings">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="reveal">
+                    <p class="eyebrow">Celebrations</p>
+                    <h2>Where Forever<br>Begins</h2>
+                    <div class="gold-line"></div>
+                    <p>Transform your most cherished moments into legendary celebrations. The Cube Club offers breathtaking venues, bespoke event design, and flawless execution for weddings that transcend imagination.</p>
+                    <div class="stagger-children" style="margin-top: 2rem;">
+                        <div class="wedding-feature">
+                            <span class="wedding-feature__icon">✦</span>
+                            <span>Grand Outdoor Ceremonial Lawns</span>
+                        </div>
+                        <div class="wedding-feature">
+                            <span class="wedding-feature__icon">✦</span>
+                            <span>Luxury Indoor Banquet Halls</span>
+                        </div>
+                        <div class="wedding-feature">
+                            <span class="wedding-feature__icon">✦</span>
+                            <span>Dedicated Wedding Concierge</span>
+                        </div>
+                        <div class="wedding-feature">
+                            <span class="wedding-feature__icon">✦</span>
+                            <span>Capacity up to 2,000 Guests</span>
+                        </div>
+                        <div class="wedding-feature">
+                            <span class="wedding-feature__icon">✦</span>
+                            <span>Bespoke Décor & Floral Design</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn--outline" style="margin-top: 2.5rem;">Plan Your Celebration <span class="btn-arrow">→</span></a>
+                </div>
+                <div class="reveal-right">
+                    <div class="wedding__gallery">
+                        <div class="wedding__gallery-item">
+                            <img src="assets/images/wedding_venue.png" alt="Luxury wedding venue">
+                            <div class="wedding__gallery-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 9: TESTIMONIALS                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section section--ivory" id="testimonials">
+        <div class="container">
+            <div class="text-center reveal">
+                <p class="eyebrow">Testimonials</p>
+                <h2>Voices of Trust</h2>
+                <div class="gold-line" style="margin: 1.5rem auto;"></div>
+            </div>
+
+            <div class="testimonials__slider">
+                <div class="testimonial-card" data-slide="0">
+                    <div class="testimonial-card__quote">
+                        "The Cube Club isn't just a property — it's a legacy. The returns have been exceptional, and the experience of staying at my own investment property is priceless."
+                    </div>
+                    <div class="testimonial-card__author">Rajesh Mehta</div>
+                    <div class="testimonial-card__role">Investor, Mumbai</div>
+                </div>
+                <div class="testimonial-card" data-slide="1" style="display: none;">
+                    <div class="testimonial-card__quote">
+                        "We hosted our daughter's wedding at The Cube Club and it was nothing short of magical. Every detail was perfect. Our guests still talk about it."
+                    </div>
+                    <div class="testimonial-card__author">Priya & Anil Sharma</div>
+                    <div class="testimonial-card__role">Wedding Hosts, Delhi</div>
+                </div>
+                <div class="testimonial-card" data-slide="2" style="display: none;">
+                    <div class="testimonial-card__quote">
+                        "The level of hospitality here rivals the best resorts in the world. From the spa to the dining — every touchpoint screams luxury and attention to detail."
+                    </div>
+                    <div class="testimonial-card__author">Vikram Desai</div>
+                    <div class="testimonial-card__role">Guest, Bangalore</div>
+                </div>
+                <div class="testimonial-card" data-slide="3" style="display: none;">
+                    <div class="testimonial-card__quote">
+                        "As an early investor, I've seen the value of my unit appreciate significantly. The professional management team delivers consistent rental income every month."
+                    </div>
+                    <div class="testimonial-card__author">Sneha Kapoor</div>
+                    <div class="testimonial-card__role">Investor, Pune</div>
+                </div>
+            </div>
+
+            <div class="testimonials__nav">
+                <button class="testimonials__arrow testimonials__arrow--prev" aria-label="Previous testimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <div class="testimonials__dots">
+                    <button class="testimonials__dot active" data-slide="0" aria-label="Testimonial 1"></button>
+                    <button class="testimonials__dot" data-slide="1" aria-label="Testimonial 2"></button>
+                    <button class="testimonials__dot" data-slide="2" aria-label="Testimonial 3"></button>
+                    <button class="testimonials__dot" data-slide="3" aria-label="Testimonial 4"></button>
+                </div>
+                <button class="testimonials__arrow testimonials__arrow--next" aria-label="Next testimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 10: FOUNDER STORY                    -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section" id="founder">
+        <div class="container">
+            <div class="founder">
+                <div class="reveal-left">
+                    <div class="founder__image parallax-container">
+                        <img src="assets/images/lobby_entrance.png" alt="The Cube Club vision" class="parallax-img" data-speed="0.1">
+                    </div>
+                </div>
+                <div class="founder__content reveal-right">
+                    <p class="eyebrow">Our Story</p>
+                    <h2>A Vision Born<br>from Passion</h2>
+                    <div class="gold-line"></div>
+                    <p>The Cube Club was born from a singular vision — to create a destination where luxury is not just experienced, but owned. Where hospitality becomes an investment, and every stay feels like coming home.</p>
+                    <p style="margin-top: 1rem;">Our journey began with a belief that the finest things in life should also be the smartest investments. Today, The Cube Club stands as a testament to that philosophy — a living, breathing ecosystem of luxury, trust, and extraordinary returns.</p>
+                    <p style="margin-top: 1rem;">We don't just build properties. We craft legacies.</p>
+                    <div class="founder__signature">— The Cube Club</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 11: MEDIA & AWARDS                   -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section section--ivory" id="media">
+        <div class="container">
+            <div class="text-center reveal">
+                <p class="eyebrow">Recognition</p>
+                <h2>Featured & Awarded</h2>
+                <div class="gold-line" style="margin: 1.5rem auto;"></div>
+                <p style="margin: 0 auto 3rem;">Recognized by leading industry publications and hospitality bodies for our commitment to excellence.</p>
+            </div>
+
+            <div class="awards-grid stagger-children">
+                <div class="awards-grid__item">
+                    <div class="award-badge">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#C6A56A" stroke-width="1">
+                            <circle cx="30" cy="30" r="28"/>
+                            <text x="30" y="25" text-anchor="middle" fill="#C6A56A" font-family="'Cormorant Garamond', serif" font-size="8" font-weight="300">LUXURY</text>
+                            <text x="30" y="36" text-anchor="middle" fill="#C6A56A" font-family="'Cormorant Garamond', serif" font-size="8" font-weight="300">AWARD</text>
+                            <text x="30" y="46" text-anchor="middle" fill="#8A8578" font-family="'DM Sans', sans-serif" font-size="5">2024</text>
+                        </svg>
+                    </div>
+                    <p class="award-name">Best Luxury Resort</p>
+                </div>
+                <div class="awards-grid__item">
+                    <div class="award-badge">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#C6A56A" stroke-width="1">
+                            <rect x="2" y="2" width="56" height="56" rx="4"/>
+                            <text x="30" y="25" text-anchor="middle" fill="#C6A56A" font-family="'Cormorant Garamond', serif" font-size="8" font-weight="300">DESIGN</text>
+                            <text x="30" y="36" text-anchor="middle" fill="#C6A56A" font-family="'Cormorant Garamond', serif" font-size="8" font-weight="300">EXCELLENCE</text>
+                            <text x="30" y="46" text-anchor="middle" fill="#8A8578" font-family="'DM Sans', sans-serif" font-size="5">2024</text>
+                        </svg>
+                    </div>
+                    <p class="award-name">Design Excellence</p>
+                </div>
+                <div class="awards-grid__item">
+                    <div class="award-badge">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#C6A56A" stroke-width="1">
+                            <polygon points="30,2 38,22 60,22 42,36 48,58 30,44 12,58 18,36 0,22 22,22"/>
+                        </svg>
+                    </div>
+                    <p class="award-name">5-Star Hospitality</p>
+                </div>
+                <div class="awards-grid__item">
+                    <div class="award-badge">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#C6A56A" stroke-width="1">
+                            <circle cx="30" cy="30" r="28"/>
+                            <text x="30" y="25" text-anchor="middle" fill="#C6A56A" font-family="'Cormorant Garamond', serif" font-size="8" font-weight="300">TOP</text>
+                            <text x="30" y="36" text-anchor="middle" fill="#C6A56A" font-family="'Cormorant Garamond', serif" font-size="8" font-weight="300">INVESTOR</text>
+                            <text x="30" y="46" text-anchor="middle" fill="#8A8578" font-family="'DM Sans', sans-serif" font-size="5">CHOICE</text>
+                        </svg>
+                    </div>
+                    <p class="award-name">Top Investor Choice</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 12: BOOKING CTA                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section section--dark" id="booking">
+        <div class="container">
+            <div class="text-center reveal">
+                <p class="eyebrow">Reserve</p>
+                <h2>Begin Your Journey</h2>
+                <div class="gold-line" style="margin: 1.5rem auto;"></div>
+                <p style="margin: 0 auto 3rem; color: rgba(255,255,255,0.6);">Whether you're seeking an extraordinary stay or a transformative investment, your journey starts here.</p>
+                <div class="hero__buttons" style="margin-top: 2rem;">
+                    <a href="#contact" class="btn btn--primary">Schedule a Visit <span class="btn-arrow">→</span></a>
+                    <a href="https://wa.me/917623977045" target="_blank" class="btn btn--outline">WhatsApp Us <span class="btn-arrow">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 13: CONTACT / ADVISOR CTA            -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section section--ivory" id="contact">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: start; gap: clamp(3rem, 6vw, 6rem);">
+                <div class="reveal">
+                    <p class="eyebrow">Get in Touch</p>
+                    <h2>Let's Start a<br>Conversation</h2>
+                    <div class="gold-line"></div>
+                    <p>Whether you're interested in a luxury stay, a wedding celebration, or an investment opportunity — our dedicated team is here to assist you.</p>
+                    <div class="contact-info" style="margin-top: 2rem;">
+                        <div class="contact-info__item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C6A56A" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="contact-info__item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C6A56A" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>concierge@thecubeclub.com</span>
+                        </div>
+                        <div class="contact-info__item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C6A56A" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>The Cube Club, Premium Location, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal-right">
+                    <form class="contact__form" id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number</label>
+                            <input type="tel" id="contact-phone" placeholder="+91 XXXXX XXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-interest">I'm Interested In</label>
+                            <select id="contact-interest" class="calculator__select">
+                                <option value="">Select an option</option>
+                                <option value="stay">Luxury Stay</option>
+                                <option value="invest">Investment Opportunity</option>
+                                <option value="wedding">Wedding & Events</option>
+                                <option value="visit">Schedule a Site Visit</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Your Message</label>
+                            <textarea id="contact-message" placeholder="Tell us how we can assist you..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">Send Message <span class="btn-arrow">→</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FOOTER                                       -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div>
+                    <div class="footer__brand">The Cube <span>Club</span></div>
+                    <p style="max-width: 300px; font-size: 0.85rem; line-height: 1.7; color: rgba(255,255,255,0.4); margin-top: 1rem;">A luxury lifestyle destination where world-class hospitality meets extraordinary investment opportunity.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Experience</h4>
+                    <ul class="footer__links">
+                        <li><a href="#hospitality">Luxury Stay</a></li>
+                        <li><a href="#weddings">Weddings</a></li>
+                        <li><a href="#hospitality">Dining</a></li>
+                        <li><a href="#hospitality">Wellness</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Invest</h4>
+                    <ul class="footer__links">
+                        <li><a href="#investment">Overview</a></li>
+                        <li><a href="#roi-calculator">ROI Calculator</a></li>
+                        <li><a href="#trust">Trust</a></li>
+                        <li><a href="#contact">Advisor</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Connect</h4>
+                    <ul class="footer__links">
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="https://wa.me/917623977045" target="_blank">WhatsApp</a></li>
+                        <li><a href="#founder">Our Story</a></li>
+                        <li><a href="#media">Media</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2024 The Cube Club. All rights reserved.</p>
+                <div class="footer__social">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75,15.02 15.5,11.75 9.75,8.48"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- STICKY BOOKING BAR                           -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="booking-bar" id="booking-bar">
+        <div class="booking-bar__inner container">
+            <div class="booking-bar__field">
+                <label for="checkin-date">Check In</label>
+                <input type="date" id="checkin-date">
+            </div>
+            <div class="booking-bar__divider"></div>
+            <div class="booking-bar__field">
+                <label for="checkout-date">Check Out</label>
+                <input type="date" id="checkout-date">
+            </div>
+            <div class="booking-bar__divider"></div>
+            <div class="booking-bar__field">
+                <label>Guests</label>
+                <div class="guest-counter">
+                    <button class="guest-minus" aria-label="Decrease guests">−</button>
+                    <span id="guest-count">2</span>
+                    <button class="guest-plus" aria-label="Increase guests">+</button>
+                </div>
+            </div>
+            <button class="btn btn--primary" id="booking-submit" style="padding: 0.8rem 2rem;">Book Now</button>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- WHATSAPP FLOATING CTA                        -->
+    <!-- ═══════════════════════════════════════════ -->
+    <a href="https://wa.me/917623977045" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="white">
+            <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.914 15.914 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.53 22.614c-.396 1.116-1.958 2.042-3.2 2.312-.848.18-1.956.324-5.684-1.222-4.772-1.978-7.838-6.832-8.076-7.15-.228-.318-1.926-2.564-1.926-4.89s1.218-3.47 1.65-3.942c.396-.432.922-.608 1.226-.608.15 0 .286.008.408.014.432.018.648.042.934.722.358.85 1.228 2.994 1.336 3.212.108.218.216.514.068.812-.138.306-.258.496-.476.762-.218.264-.458.59-.654.792-.218.228-.444.474-.192.906.254.432 1.126 1.858 2.42 3.012 1.662 1.484 3.062 1.944 3.494 2.162.432.218.684.182.934-.108.258-.298 1.104-1.286 1.398-1.728.286-.432.582-.36.978-.216.4.15 2.534 1.196 2.968 1.414.432.218.722.324.828.508.11.182.11 1.076-.286 2.192z"/>
+        </svg>
+    </a>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SCRIPTS                                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- GSAP Core -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+    <!-- Main Application JS -->
+    <script src="js/main.js" defer></script>
+    <!-- ROI Calculator -->
+    <script src="js/roi-calculator.js" defer></script>
+    <!-- Booking Bar -->
+    <script src="js/booking.js" defer></script>
+
+</body>
+</html>
